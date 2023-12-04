@@ -1,8 +1,10 @@
-import React from 'react'
+import Joseph from "./Joseph"
+
 
 const Header = () => {
   return (
-    <div className='max-w-screen-2xl mx-auto border-2 h-[71px]'>
+    <>
+    <div className='max-w-screen-2xl mx-auto  h-[71px] bg-white/80 shadow-lg'>
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
             <h1 className='text-[17px]'>Joseph.Dev</h1>
 
@@ -13,6 +15,9 @@ const Header = () => {
             </div>
        </div>
     </div>
+
+    <Joseph />
+    </>
   )
 }
 
