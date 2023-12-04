@@ -1,10 +1,13 @@
+import Header from "./components/Header"
 
+
+import './index.css'
 function App() {
 
 
   return (
     <>
-      <div className="text-4xl text-bl">Joseph dat Dev 28</div>
+      <Header />
     </>
   )
 }
