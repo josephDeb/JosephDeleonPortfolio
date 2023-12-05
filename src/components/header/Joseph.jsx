@@ -8,13 +8,14 @@ import express from '../../assets/express.png'
 import mongodb from '../../assets/mongodb.png'
 import mysql from '../../assets/mysql.png'
 import man from '../../assets/man.png'
+import msgbox from '../../assets/msgbox.png'
 import './header.css'
 import './script.js'
 const Joseph = () => {
   return (
     <div className='max-w-screen-2xl mt-8  xl:h-[80vh] h-[125vh]'>
         
-       <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col'>
+       <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col'></div>
             <div className='w-full  h-full  flex flex-col pt-8'>
                 <div className='flex flex-col'>
                    <h1 className='text-xl'>Hello i'm</h1>
@@ -43,9 +44,12 @@ const Joseph = () => {
                 </div>
             </div>
 
-            <div className='w-full h-full centered'>
-                <div className='w-full'>
+            <div className='w-full h-full flex justify-start items-center relative '>
+                <div className=''>
                 <img src={man} className='w-[250px] mx-auto xl:w-[350px]'/>
+                </div>
+                <div>
+                    <img src={msgbox} className='w-[350px] absolute top-0 right-0 rotate-45'/>
                 </div>
             </div>
        </div>

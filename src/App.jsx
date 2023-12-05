@@ -10,6 +10,7 @@ import Educational from "./components/section/about/Educational"
 import Skills from "./components/section/about/Skills"
 import Projects from "./components/section/projects/Projects"
 import Contact from "./components/section/contact/Contact"
+import Footer from "./components/footer/Footer"
 function App() {
 
 
@@ -27,6 +28,7 @@ function App() {
           </Routes>
           <Projects />
           <Contact />
+          <Footer />
       </Router>
     </>
   )

@@ -18,7 +18,7 @@ const PersonalInfo = () => {
             <h4 className='text-red-500 text-2xl'>My Details</h4>
         </div>
 
-        <div className='xl:w-[88%] xl:flex xl:flex-row gap-2 xl:mx-auto xl:centered mt-5 bg-white py-2 hidden'>
+        <div className='xl:w-[88%] xl:flex xl:flex-row gap-2 xl:mx-auto xl:centered mt-5 py-2 hidden centered'>
             <h1 className='border-r border-red-500 pr-2'>Name: Joseph louise C. De leon</h1>
             <h1 className='border-r border-red-500 pr-2'>Age: 19</h1>
             <h1 className='border-r border-red-500 pr-2'>Birthday: July 9 2004</h1>
