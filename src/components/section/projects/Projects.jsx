@@ -4,7 +4,7 @@ import github from '../../../assets/github.png'
 const Projects = () => {
   return (
     <>
-    <div className='w-full h-[140px] flex justify-center items-end'>
+    <div id='projects' className='w-full h-[140px] flex justify-center items-end'>
       <h1 className='text-5xl'>Projects</h1>
      </div>
 

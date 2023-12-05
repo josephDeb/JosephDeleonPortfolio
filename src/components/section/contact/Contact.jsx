@@ -3,7 +3,7 @@ import email from '../../../assets/email.png'
 
 const Contact = () => {
   return (
-    <div className='w-full h-screen centered pb-44'>
+    <div id='contact' className='w-full h-screen centered pb-44'>
         <div className='w-[80%] flex flex-col xl:flex-row'>
             <div className='h-[350px] w-full xl:centered xl:w-full xl:h-[440px]'>
                 <img src={email} className='object-cover xl:object-contain xl:h-[440px] xl:w-full'/>
