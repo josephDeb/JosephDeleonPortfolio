@@ -1,4 +1,4 @@
-import img from '../../assets/joseph28.jpg'
+
 import html from '../../assets/html.png'
 import css from '../../assets/css.png'
 import js from '../../assets/java-script.png'
@@ -45,7 +45,7 @@ const Joseph = () => {
 
             <div className='w-full h-full centered'>
                 <div className='w-full'>
-                <img src={man} className='w-[250px] mx-auto'/>
+                <img src={man} className='w-[250px] mx-auto xl:w-[350px]'/>
                 </div>
             </div>
        </div>

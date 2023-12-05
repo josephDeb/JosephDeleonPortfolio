@@ -17,26 +17,23 @@ const About = () => {
   }
 
   return (
-    <div className='max-w-screen-2xl xl:h-screen h-[120vh]  flex flex-col '>
+    <div className='max-w-screen-2xl xl:h-screen flex flex-col centered py-8'>
         <div className='w-full centered '>
             <h1 className='text-5xl'>About me</h1>
         </div>
         
         <div className='w-[88%] mx-auto '>
-            <div className='xl:w-[53%] mx-auto h-[71px] mt-5 FSC'>
+            <div className='xl:w-[53%] mx-auto h-[71px] mt-5 flex justify-center items-center'>
    
-            <Link to={'/personalinfo'}  className=' h-[53px] w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>PersonalInfo</Link>
-            <Link to={'/educational'}  className=' h-[53px] w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Educational</Link>
-            <Link to={'/skills'}  className='  h-[53px] w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Skills</Link>
+            <Link to={'/'}  className=' h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>PersonalInfo</Link>
+            <Link to={'/educational'}  className=' h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Educational</Link>
+            <Link to={'/skills'}  className='  h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Skills</Link>
             </div>
 
-            <div className='w-full   pt-5'>
+            <div className='w-full  pt-5'>
                 <Outlet />
             </div>
 
-            <div className='h-32'>
-
-            </div>
         </div>
     </div>
   )

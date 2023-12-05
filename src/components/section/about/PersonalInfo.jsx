@@ -12,21 +12,21 @@ const PersonalInfo = () => {
         <h1 className=''>I am a Full stack Developer</h1>
 
         <p className='text-[14px] pt-2 text-gray-500'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit ratione minus non corrupti amet consectetur.</p>
-
-        <div className='flex flex-col xl:grid xl:grid-cols-3 '>
-        <div className='centered w-full flex-col mt-8 gap-2'>
-            <h5 className='text-red-500 text-2xl'>My details</h5>
+        
+        <div className='mt-8 centered gap-4'>
             <img src={me} className='w-12'/>
-            <h4>Joseph louise C. De leon</h4>
-            <div className='flex flex-col '>
-                <p>Birthday : July 9 2004</p>
-                <div className='flex w-full centered gap-3'>
-                <p>Age : 19</p>
-                <p>Sex : Male</p>
-                </div>
-                <p>Language: English & Tagalog</p>
-            </div>
+            <h4 className='text-red-500 text-2xl'>My Details</h4>
         </div>
+
+        <div className='xl:w-[88%] xl:flex xl:flex-row gap-2 xl:mx-auto xl:centered mt-5 bg-white py-2 hidden'>
+            <h1 className='border-r border-red-500 pr-2'>Name: Joseph louise C. De leon</h1>
+            <h1 className='border-r border-red-500 pr-2'>Age: 19</h1>
+            <h1 className='border-r border-red-500 pr-2'>Birthday: July 9 2004</h1>
+            <h1 className='border-r border-red-500 pr-2'>Sex: Male</h1>
+            <h1>Languages: English & Filipino</h1>
+        </div>
+        
+        <div className='flex flex-col xl:grid xl:grid-cols-3 '>
 
         <div className='centered w-full flex-col mt-8 gap-2'>
         <h5 className='text-red-500 text-2xl'> Email</h5>

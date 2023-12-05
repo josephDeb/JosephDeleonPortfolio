@@ -20,7 +20,7 @@ const Educational = () => {
         <div className='w-full mt-8 flex flex-col xl:grid  xl:grid-cols-2'>
               {data[1].educ.map((ed, i) => {
                 return <div key={i} className='flex justify-between items-center gap-2 my-2'>
-                    <div className='w-[62px] h-[53px] centered'>
+                    <div className='w-[62px] h-[53px] centered '>
                         <HiLocationMarker className='text-3xl text-red-500 cursor-pointer'/>
                     </div>
                     <div className='w-full flex flex-col '>
