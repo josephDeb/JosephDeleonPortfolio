@@ -19,18 +19,11 @@ const Category = [
        id: 2,
        educ: [
         {
-            id:80,
-            schoolName: "San Gabriel Elementary School",
-            level: "Elementary",
-            location: "San Gabriel Elementary School, Bonifacio Street, Novaliches, Quezon City, Metro Manila",
-            year: "2010 / 2016"
-        },
-        {
-            id:81,
-            schoolName: "Sta lucia High School",
-            level: "High school",
-            location: "JP Rizal Street Sta, Lucia Novaliches, Quezon City, Metro Manila",
-            year: "2016 / 2020"
+            id:83,
+            schoolName: "IIH COLLEGE-Novaliches Campus",
+            level: "College",
+            location: "Buenamar Dr, Novaliches, Quezon City, Metro Manila",
+            year: "2022 / 2023"
         },
         {
             id:82,
@@ -40,12 +33,20 @@ const Category = [
             year: "2020 / 2022"
         },
         {
-            id:83,
-            schoolName: "IIH COLLEGE-Novaliches Campus",
-            level: "College",
-            location: "Buenamar Dr, Novaliches, Quezon City, Metro Manila",
-            year: "2022 / 2023"
+            id:81,
+            schoolName: "Sta lucia High School",
+            level: "High school",
+            location: "JP Rizal Street Sta, Lucia Novaliches, Quezon City, Metro Manila",
+            year: "2016 / 2020"
         }
+        ,
+        {
+            id:80,
+            schoolName: "San Gabriel Elementary School",
+            level: "Elementary",
+            location: "San Gabriel Elementary School, Bonifacio Street, Novaliches, Quezon City, Metro Manila",
+            year: "2010 / 2016"
+        },
        ],
        category: "Educational"
     },

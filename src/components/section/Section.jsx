@@ -1,12 +1,11 @@
 import React from 'react'
-import About from './About'
+import About from './about/About'
 import Service from './Service'
 import Projects from './Projects'
 
 const Section = () => {
   return (
     <>
-        <About/>
         <Service />
         <Projects />
     </>

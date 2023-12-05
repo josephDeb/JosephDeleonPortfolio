@@ -7,12 +7,12 @@ import nodejs from '../../assets/node-js.png'
 import express from '../../assets/express.png'
 import mongodb from '../../assets/mongodb.png'
 import mysql from '../../assets/mysql.png'
-
+import man from '../../assets/man.png'
 import './header.css'
 import './script.js'
 const Joseph = () => {
   return (
-    <div className='max-w-screen-2xl mt-8  xl:h-[80vh] h-screen'>
+    <div className='max-w-screen-2xl mt-8  xl:h-[80vh] h-[125vh]'>
         
        <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col'>
             <div className='w-full  h-full  flex flex-col pt-8'>
@@ -43,8 +43,9 @@ const Joseph = () => {
                 </div>
             </div>
 
-            <div className='w-full flex justify-center items-center h-full'>
-                <div className='w-[71%] h-[71%] rounded-full bg-red-200'>
+            <div className='w-full h-full centered'>
+                <div className='w-full'>
+                <img src={man} className='w-[250px] mx-auto'/>
                 </div>
             </div>
        </div>
