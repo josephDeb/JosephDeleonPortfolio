@@ -8,3 +8,18 @@ html {
   font-family: 'Lumanosimo', sans-serif;
                                                 
 }
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FSC {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.FSC {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}

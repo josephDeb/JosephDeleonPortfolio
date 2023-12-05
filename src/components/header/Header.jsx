@@ -8,7 +8,7 @@ const Header = () => {
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
             <h1 className='text-[17px]'>Joseph.Dev</h1>
 
-            <div className='flex gap-6'>
+            <div className='gap-6 hidden xl:flex'>
                 <h2>Projects</h2>
                 <h3>About</h3>
                 <h2>Get in touch</h2>
