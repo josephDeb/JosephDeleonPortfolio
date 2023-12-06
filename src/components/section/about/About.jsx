@@ -17,7 +17,7 @@ const About = () => {
   }
 
   return (
-    <div id='about' className='max-w-screen-2xl xl:h-screen flex flex-col centered py-8'>
+    <div id='about' className='max-w-screen-2xl  flex flex-col py-8 xl:pt-[140px] xl:pb-[140px]'>
         <div className='w-full centered '>
             <h1 className='text-5xl'>About me</h1>
         </div>
@@ -29,11 +29,10 @@ const About = () => {
             <Link to={'/educational'}  className=' h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Educational</Link>
             <Link to={'/skills'}  className='  h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Skills</Link>
             </div>
+        </div>
 
-            <div className='w-full  pt-5'>
+        <div className='w-full  pt-5'>
                 <Outlet />
-            </div>
-
         </div>
     </div>
   )
