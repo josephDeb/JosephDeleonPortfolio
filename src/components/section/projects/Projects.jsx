@@ -60,11 +60,11 @@ const Projects = () => {
                     </i>
               </div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full ' >
+              <div onClick={() => onClick()} className='h-[260px] shadow-lg cursor-pointer relative w-full ' >
                     <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500'/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <a target='_blank' href='https://github.com/josephDeb/employeeMS' className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
+                          <a  className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
                           <img src={eye} className='w-8'/>
                           </a>
                           <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>

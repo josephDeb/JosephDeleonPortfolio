@@ -61,7 +61,7 @@ const Joseph = () => {
                    <h1 className='text-xl'>Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl mb-3'>Joseph louise De leon</h4>
                    <h4 className='text-3xl'>Full stack Developer</h4>
-                   <p className='text-[14px]'> a 19-year-old residing in Novaliches, Quezon City. I can code using MERN (MongoDB, Express.js, React, Node.js) stack and I am actively seeking an internship opportunity to further enhance my skills..</p>
+                   <p className='text-[14px]'> a 19-year-old residing in Novaliches, Quezon City. I can code using MERN (MongoDB, Express.js, React, Node.js) stack and I am actively seeking an internship opportunity to further enhance my skills.</p>
                 </div>
 
             <div className="scroller xl:mt-5" data-direction="right" data-speed="slow">
