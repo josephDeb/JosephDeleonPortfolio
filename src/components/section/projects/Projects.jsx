@@ -21,6 +21,9 @@ import tailwind from '../../../assets/Tailwind CSS.png'
 import Next from '../../../assets/Next.js.png'
 import framer from '../../../assets/farmer.png'
 const Projects = () => {
+    const onClick = () => {
+        console.log("clikced")
+    }
   return (
     <>
    <div className='max-w-screen-2xl mx-auto xl:h-[1110px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px]'>
@@ -57,13 +60,13 @@ const Projects = () => {
                     </i>
               </div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
-                    <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
+              <div className='h-[260px] shadow-lg cursor-pointer relative w-full ' >
+                    <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500'/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a target='_blank' href='https://github.com/josephDeb/employeeMS' className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
                           <img src={eye} className='w-8'/>
-                          </div>
+                          </a>
                           <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
                           </div>
