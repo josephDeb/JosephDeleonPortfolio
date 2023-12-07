@@ -18,8 +18,7 @@ const PersonalInfo = () => {
         </div>
 
         <div className=' xl:w-[710px]'>
-            <h1 className='px-5'>Hello, I'm Joseph Louise C. de Leon, a 19-year-old residing in Novaliches, Quezon City.
-            I can code using MERN (MongoDB, Express.js, React, Node.js) stack and I am actively seeking an internship opportunity to further enhance my skills.
+            <h1 className='px-5'>Hello! I am a college dropout with a strong passion for web development. I am actively seeking an internship opportunity in web development, and I have knowledge in MERN stack (MongoDB, Express.js, React, Node.js). I am eager to apply my skills and continue learning in a professional environment. Thank you for considering my application!
             </h1>
 
            <div className='grid xl:grid-cols-2 mt-14'>

@@ -8,24 +8,62 @@ import express from '../../assets/express.png'
 import mongodb from '../../assets/mongodb.png'
 import mysql from '../../assets/mysql.png'
 import man from '../../assets/man.png'
+
+import neko from '../../assets/maneki-neko.png'
 import msgbox from '../../assets/msgbox.png'
 import './header.css'
-import './script.js'
 
 import {Link} from 'react-scroll'
+import { useEffect } from 'react'
 const Joseph = () => {
+
+    useEffect(() => {
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
+          }
+         
+    }, [])
+
+    const scrollers = document.querySelectorAll(".scroller");
+
+    // If a user hasn't opted in for recuded motion, then we add the animation
+    
+    
+    
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        // add data-animated="true" to every `.scroller` on the page
+        scroller.setAttribute("data-animated", true);
+    
+        // Make an array from the elements within `.scroller-inner`
+        const scrollerInner = scroller.querySelector(".scroller__inner");
+        const scrollerContent = Array.from(scrollerInner.children);
+    
+        // For each item in the array, clone it
+        // add aria-hidden to it
+        // add it into the `.scroller-inner`
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          duplicatedItem.setAttribute("aria-hidden", true);
+          scrollerInner.appendChild(duplicatedItem);
+        });
+      });
+    }
+    
+
+
   return (
-    <div id='home' className='max-w-screen-2xl mt-8  xl:h-[80vh] h-[125vh]'>
-        
-       <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col'>
+    <div id='home' className='max-w-screen-2xl mt-8  xl:h-[80vh] h-[125vh] mx-auto'>
+
+       <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col xl:gap-5 xl:pt-[17px]'>
             <div className='w-full  h-full  flex flex-col pt-8'>
-                <div className='flex flex-col'>
+                <div className='flex flex-col xl:gap-2'>
                    <h1 className='text-xl'>Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl mb-3'>Joseph louise De leon</h4>
                    <h4 className='text-3xl'>Full stack Developer</h4>
                    <p className='text-[14px]'> a 19-year-old residing in Novaliches, Quezon City. I can code using MERN (MongoDB, Express.js, React, Node.js) stack and I am actively seeking an internship opportunity to further enhance my skills..</p>
                 </div>
-                
+
             <div className="scroller xl:mt-5" data-direction="right" data-speed="slow">
                 <div className="scroller__inner">
                     <img src={html} alt="" className='w-[44px]'/>

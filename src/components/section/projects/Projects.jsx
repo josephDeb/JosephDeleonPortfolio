@@ -23,7 +23,9 @@ import framer from '../../../assets/farmer.png'
 const Projects = () => {
   return (
     <>
-    <div id='projects' className='w-full h-[140px] flex justify-center items-end'>
+   <div className='max-w-screen-2xl mx-auto xl:h-[1110px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px]'>
+
+   <div id='projects' className='w-full h-[140px] flex justify-center items-end'>
       <h1 className='text-5xl'>Projects</h1>
      </div>
 
@@ -156,9 +158,9 @@ const Projects = () => {
         </div>
     </div>
 
-    <div className='h-44'>
 
-    </div>
+   </div>
+
     </>
   )
 }

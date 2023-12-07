@@ -1,15 +1,23 @@
 import Joseph from "./Joseph"
 import {Link} from 'react-scroll'
-
+import neko from '../../assets/maneki-neko.png'
 const Header = () => {
 
   return (
     <>
     <div className='max-w-screen-2xl mx-auto  h-[71px] bg-white/80 shadow-lg'>
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
-            <Link
+           <div className="flex justify-center items-center ">
+           <div className=''>
+            <img src={neko} className='w-[53px]'/>
+          </div>
+           <Link
                 className='text-[17px]
-                '>Joseph.Dev</Link>
+                '>Joseph.Dev
+          </Link>
+           </div>
+
+          
 
             <div className='gap-6 hidden xl:flex'>
                 <Link
