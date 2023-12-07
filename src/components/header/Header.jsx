@@ -7,9 +7,7 @@ const Header = () => {
     <>
     <div className='max-w-screen-2xl mx-auto  h-[71px] bg-white/80 shadow-lg'>
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
-            <Link to='home'
-                activeClass='active'
-                spy={true} 
+            <Link
                 className='text-[17px]
                 '>Joseph.Dev</Link>
 
