@@ -50,14 +50,14 @@ const Skills = () => {
             })}
         </div>
 
-        <div className='w-full grid grid-cols-1 xl:grid-cols-3 gap-5 mt-14 xl:w-[80%]'>
+        <div className='w-full grid grid-cols-2 xl:grid-cols-3 gap-5 mt-14 xl:w-[80%]'>
               <div className='border-2 h-[260px] border-black flex flex-col'>
                   <div className='w-full p-4'>
                       <img src={chat} className='w-14'/>
                   </div>
 
                   <div className='h-full w-full centered flex-col gap-2'>
-                      <h1 className='font-extrabold text-2xl'>Communication</h1>
+                      <h1 className='font-extrabold text-lg xl:text-xl'>Communication</h1>
                       <p className='text-[14px] px-5'>Can communicate using English & Tagalog and sharing ideas</p>
                   </div>
               </div>
@@ -67,7 +67,7 @@ const Skills = () => {
                   </div>
 
                   <div className='h-full w-full centered flex-col gap-2'>
-                      <h1 className='font-extrabold text-2xl'>Adaptability</h1>
+                      <h1 className='font-extrabold text-lg xl:text-xl'>Adaptability</h1>
                       <p className='text-[14px] px-5'>Flexibility to embrace change and new technologies</p>
                   </div>
               </div>
@@ -77,7 +77,7 @@ const Skills = () => {
                   </div>
 
                   <div className='h-full w-full centered flex-col gap-2'>
-                      <h1 className='font-extrabold text-2xl'>Creativity</h1>
+                      <h1 className='font-extrabold text-lg xl:text-xl'>Creativity</h1>
                       <p className='text-[14px] px-5'>Generating innovative solution and ideas</p>
                   </div>
               </div>
@@ -87,7 +87,7 @@ const Skills = () => {
                   </div>
 
                   <div className='h-full w-full centered flex-col gap-2'>
-                      <h1 className='font-extrabold text-2xl'>Problem solving</h1>
+                      <h1 className='font-extrabold text-lg xl:text-xl'>Problem solving</h1>
                       <p className='text-[14px] px-5'>Analytical thinking to resolve challenges</p>
                   </div>
               </div>
@@ -97,7 +97,7 @@ const Skills = () => {
                   </div>
 
                   <div className='h-full w-full centered flex-col gap-2'>
-                      <h1 className='font-extrabold text-2xl'>Time management</h1>
+                      <h1 className='font-extrabold text-lg xl:text-xl'>Time management</h1>
                       <p className='text-[14px] px-5'>Prioritizing task to finish on date</p>
                   </div>
               </div>

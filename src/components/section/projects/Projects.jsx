@@ -25,7 +25,7 @@ const Projects = () => {
 
   return (
     <>
-   <div className='max-w-screen-2xl mx-auto xl:h-[890px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px] pt-[80px] xl:pt-0'>
+   <div className='max-w-screen-2xl mx-auto xl:h-[800px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px] pt-[80px] xl:pt-0'>
 
    <div id='projects' className='w-full h-[140px] flex justify-center items-center flex-col xl:gap-8'>
     
