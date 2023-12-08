@@ -60,10 +60,10 @@ const Joseph = () => {
        <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col xl:gap-5 xl:pt-[17px]'>
             <div className='w-full  h-full  flex flex-col pt-8'>
                 <div className='flex flex-col xl:gap-2'>
-                   <h1 className='text-xl'>Hey there , I'm </h1>
-                  <h4 className='xl:text-5xl text-3xl mb-3'>Joseph louise De leon</h4>
-                   <h4 className='text-3xl'>Full stack Developer</h4>
-                   <p className='text-[14px]'> a 19-year-old residing in Novaliches, Quezon City. I can code using MERN (MongoDB, Express.js, React, Node.js) stack and I am actively seeking an internship opportunity to further enhance my skills.</p>
+                   <h1 className='text-md xl:text-xl'>Hey there , I'm </h1>
+                  <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
+                   <h4 className='text-3xl joseph'>Front end Developer</h4>
+                   <p className='text-[14px]'>Hello! I am actively seeking an internship opportunity in web development, and I have knowledge in MERN stack (MongoDB, Express.js, React, Node.js). I am eager to apply my skills and continue learning in a professional environment.</p>
                 </div>
 
             <div className="scroller xl:mt-5" data-direction="right" data-speed="slow">

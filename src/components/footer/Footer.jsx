@@ -37,7 +37,7 @@ const Footer = () => {
     <li className="icon facebook">
         <span className="tooltip">yuuesef</span>
         <span><i className="fab fa-facebook-f"></i></span>
-        <img className='w-12 object-cover' src={instagram}/>
+        <a href='https://www.instagram.com/yuuesef/'><img className='w-12 object-cover' src={instagram}/></a>
       </li>
     <li className="icon twitter">
         <span className="tooltip">josephdeleonpogi@gmail.com</span>
