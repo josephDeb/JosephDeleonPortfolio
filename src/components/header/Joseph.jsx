@@ -13,6 +13,8 @@ import neko from '../../assets/maneki-neko.png'
 import msgbox from '../../assets/msgbox.png'
 import './header.css'
 
+import resume from '../../assets/joseph.pdf'
+
 import {Link} from 'react-scroll'
 import { useEffect } from 'react'
 const Joseph = () => {
@@ -79,7 +81,7 @@ const Joseph = () => {
 
 
                 <div className='flex gap-5 mt-5'>
-                    <button className='w-[170px] border-2 py-2 bg-white border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer'>Resume</button>
+                    <a href='../../assets/joseph.pdf' download className='w-[170px] border-2 py-2 bg-white border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered'>Resume</a>
                     <Link
                     to='contact'
                     activeClass='active'

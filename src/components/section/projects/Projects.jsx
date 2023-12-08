@@ -33,7 +33,7 @@ const Projects = () => {
       <h1 className='text-5xl'>Projects</h1>
      </div>
 
-    <div className='max-w-screen-2xl centered mt-[80px]'>
+    <div className='max-w-screen-2xl centered mt-[44px] xl:mt-[80px]'>
         <div className='xl:grid xl:grid-cols-3  w-[80%] xl:gap-5 grid grid-cols-1 gap-5'>
              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
                     <img src={ecommerceWeb} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
@@ -68,9 +68,9 @@ const Projects = () => {
                           <a target='_blank' href='https://www.tiktok.com/@josephdeleon28h/video/7294283789033917698' className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
                           <img src={eye} className='w-8'/>
                           </a>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a href='https://github.com/josephDeb/employeeMS' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
-                          </div>
+                          </a>
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
@@ -91,12 +91,12 @@ const Projects = () => {
                     <img src={panotes} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a href='https://www.tiktok.com/@josephdeleon28h/video/7296757149487729921' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
-                          </div>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          </a>
+                          <a href='https://github.com/josephDeb/Panotes' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
-                          </div>
+                          </a>
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
@@ -117,12 +117,12 @@ const Projects = () => {
                     <img src={carentals} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a href='https://www.tiktok.com/@josephdeleon28h/video/7283073257702460673' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
-                          </div>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          </a>
+                          <a href='https://github.com/josephDeb/carwebsite' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
-                          </div>
+                          </a>
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
@@ -141,12 +141,12 @@ const Projects = () => {
                     <img src={crudReact} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a href='https://www.tiktok.com/@josephdeleon28h/video/7287958098529029381' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
-                          </div>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          </a>
+                          <a href='https://github.com/josephDeb/CRUD-using-React-js' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
-                          </div>
+                          </a>
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
