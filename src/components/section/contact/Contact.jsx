@@ -33,7 +33,7 @@ const Contact = () => {
         
     }
   return (
-    <div id='contact' className='w-full h-screen centered '>
+    <div id='contact' className='w-full h-[140vh] centered'>
         <form onSubmit={handleSubmit} className='w-[80%] flex flex-col xl:flex-row'>
             <div className='h-[350px] w-full xl:centered xl:w-full xl:h-[440px]'>
                 <img src={email2} className='object-cover xl:object-contain xl:h-[440px] xl:w-full'/>

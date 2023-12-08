@@ -20,15 +20,16 @@ import mysql from '../../../assets/mysql.png'
 import tailwind from '../../../assets/Tailwind CSS.png'
 import Next from '../../../assets/Next.js.png'
 import framer from '../../../assets/farmer.png'
+import star from '../../../assets/star.png'
 const Projects = () => {
-    const onClick = () => {
-        console.log("clikced")
-    }
+
   return (
     <>
-   <div className='max-w-screen-2xl mx-auto xl:h-[1110px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px]'>
+   <div className='max-w-screen-2xl mx-auto xl:h-[890px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px] pt-[80px] xl:pt-0'>
 
-   <div id='projects' className='w-full h-[140px] flex justify-center items-end'>
+   <div id='projects' className='w-full h-[140px] flex justify-center items-center flex-col xl:gap-8'>
+    
+   <img src={star} className='w-12'/>
       <h1 className='text-5xl'>Projects</h1>
      </div>
 
@@ -38,12 +39,12 @@ const Projects = () => {
                     <img src={ecommerceWeb} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a target='_blank' href='https://www.tiktok.com/@josephdeleon28h/video/7306831739874331911'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
-                          </div>
-                          <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          </a>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={github} className='w-8'/>
-                          </div>
+                          </a>
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
@@ -60,11 +61,11 @@ const Projects = () => {
                     </i>
               </div>
 
-              <div onClick={() => onClick()} className='h-[260px] shadow-lg cursor-pointer relative w-full ' >
+              <div className='h-[260px] shadow-lg cursor-pointer relative w-full  bg-black' >
                     <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500'/>
                     <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <a  className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
+                          <a target='_blank' href='https://www.tiktok.com/@josephdeleon28h/video/7294283789033917698' className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
                           <img src={eye} className='w-8'/>
                           </a>
                           <div className='bg-white px-2 py-2 rounded-full cursor-pointer'>

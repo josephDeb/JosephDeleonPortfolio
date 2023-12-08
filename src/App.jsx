@@ -12,6 +12,7 @@ import Projects from "./components/section/projects/Projects"
 import Contact from "./components/section/contact/Contact"
 import Footer from "./components/footer/Footer"
 import Welcome from "./components/header/Welcome"
+import NotFound from "./components/NotFound"
 function App() {
 
 
@@ -26,6 +27,7 @@ function App() {
                   <Route path="/skills" element={<Skills />}/>
 
               </Route>
+              <Route path="*" element={<NotFound />}/>
           </Routes>
           <Projects />
           <Contact />
