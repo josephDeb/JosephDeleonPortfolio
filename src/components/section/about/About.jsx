@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import data from '../../data/Data'
 import { Link, Outlet } from 'react-router-dom'
 import origami from '../../../assets/origami.png'
+import origami2 from '../../../assets/origami2.png'
 import Welcome from '../../header/Welcome'
+import { AppContext } from '../../../context/GlobalContext'
 const About = () => {
 
   const [datas, setDatas] = useState(data)
@@ -17,38 +19,31 @@ const About = () => {
     setDatas(newItems)
   }
 
+  const {isOn} = useContext(AppContext)
+
   return (
  <>
-  
-  <Welcome />
-
- <div className='xl:flex xl:justify-center xl:items-center xl:flex-col xl:py-[170px] xl:pt-[80px]'>
-    
-    
-    <div id='about' className='max-w-screen-2xl  flex flex-col py-8 mx-auto relative'>
-     <div className='w-full centered '>
-         <h1 className='text-5xl'>About me</h1>
-
-         <div className='absolute -top-[28px]'>
-            <img src={origami} className='w-12'/>
+ <div id='about' className={`xl:flex xl:justify-center xl:items-center xl:flex-col  ${isOn ? "bg-black text-white" : "bg-white text-black"} xl:h-screen`}>
+     <div className='w-full centered flex-col'>
+        <div className=''>
+            {isOn ? <img src={origami2} className='w-12'/> : <img src={origami} className='w-12'/>}
          </div>
-
-     </div>
-     
-     <div className='w-[88%] mx-auto '>
-         <div className='xl:w-[53%] mx-auto h-[71px] mt-5 flex justify-center items-center'>
-
-         <Link to={'/'}  className=' h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>PersonalInfo</Link>
-         <Link to={'/educational'}  className=' h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Educational</Link>
-         <Link to={'/skills'}  className='  h-[53px] bg-white w-full text-[14px] centered border hover:shadow-lg border-black transition-all duration-500 hover:bg-black hover:text-white'>Skills</Link>
-         </div>
+         <h1 className='text-5xl font-bold'>About me</h1>
      </div>
 
-     
-     <div className='w-full  pt-5'>
-             <Outlet />
-     </div>
-     </div>
+    <div  className='max-w-screen-2xl grid grid-cols-2 py-8 mx-auto relative w-full h-full'>
+
+      <div className='bg-red-200 w-full h-full centered'>
+          <div className='bg-black w-[71%] h-[71%]'>
+
+          </div>
+      </div>
+
+      <div className='bg-red-200 w-full h-full'>
+asd
+      </div>
+
+   </div>
 </div>
  </>
   )

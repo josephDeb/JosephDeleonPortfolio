@@ -1,7 +1,7 @@
 import Darkmode from "./Darkmode"
 import Joseph from "./Joseph"
 import {Link} from 'react-scroll'
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import { AppContext } from '../../context/GlobalContext'
 const Header = () => { 
 
@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <>
-    <div className={`max-w-screen-2xl mx-auto  h-[71px] shadow-lg ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white transition-all duration-500"}`}>
+    <div className={`max-w-screen-2xl mx-auto shadow-xl  h-[71px] ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white  transition-all duration-500"}`}>
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
            <div className="flex justify-center items-center ">
 
@@ -35,13 +35,14 @@ const Header = () => {
                 spy={true}
                 >About</Link>
                 <Link
-                className='cursor-pointer '
+                className='cursor-pointer'
                 to='contact'
                 activeClass='active'
                 spy={true}
                 >Get in touch</Link>
-                <Darkmode />
+                
             </div>
+            <Darkmode />
        </div>
     </div>
 

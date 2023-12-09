@@ -10,7 +10,7 @@ const Darkmode = () => {
         damping: 30
       };
   return (
-    <div className={`switch z-40 ${isOn ? "bg-white" : "bg-black"}`}data-isOn={isOn} onClick={() => setIsOn(!isOn)}>
+    <div className={`switch ${isOn ? "bg-white" : "bg-black"}`}data-isOn={isOn} onClick={() => setIsOn(!isOn)}>
       <motion.div className={`handle ${isOn ? "bg-black" : "bg-white"}`} layout transition={spring} />
     </div>
   )
