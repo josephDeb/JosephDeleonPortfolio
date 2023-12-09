@@ -19,13 +19,6 @@ const Category = [
        id: 2,
        educ: [
         {
-            id:83,
-            schoolName: "IIH COLLEGE-Novaliches Campus",
-            level: "College",
-            location: "Buenamar Dr, Novaliches, Quezon City, Metro Manila",
-            year: "2022 / 2023"
-        },
-        {
             id:82,
             schoolName: "TRINITY POLYTECHNIC COLLEGE",
             level: "Senior high school",

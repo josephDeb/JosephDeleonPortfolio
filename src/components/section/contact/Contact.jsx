@@ -40,8 +40,11 @@ const Contact = () => {
             </div>
 
             <div className='flex flex-col w-full centered'>
-                <h1 className='text-5xl'>Contact</h1>
-
+                <div className='w-full flex flex-col centered gap-5'>
+                    <h1 className='text-5xl font-bold xl:mt-0 mt-5'>Contact</h1>
+                    <p className='text-xl'>Would You Like To Contact Me ? Awesome!!</p>
+                </div>
+                
                 <div className='flex flex-col xl:w-[71%]  mt-8'>
                     <label>Full name :</label>
                     <input onChange={(e) => setName( e.target.value)} className='xl:h-[44px] h-[35px] border-2 border-black p-3'></input>
@@ -50,8 +53,8 @@ const Contact = () => {
                     <label>Email :</label>
                     <input onChange={(e) => setEmail( e.target.value)} className='xl:h-[44px] h-[35px] border-2 border-black p-3'></input>
                 </div>
-
-                <textarea onChange={(e) => setMessage(e.target.value)} className='border-2 border-black mt-5 h-[88px] xl:w-[71%] p-3'>
+                <label id='message' className='w-[80%]  mt-5'>Message</label>
+                <textarea name='message' onChange={(e) => setMessage(e.target.value)} className='border-2 border-black h-[88px] xl:w-[71%] p-3 w-[80%]'>
 
                 </textarea>
 

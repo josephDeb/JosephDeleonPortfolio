@@ -13,14 +13,17 @@ import Contact from "./components/section/contact/Contact"
 import Footer from "./components/footer/Footer"
 import Welcome from "./components/header/Welcome"
 import NotFound from "./components/NotFound"
-function App() {
+import GlobalContext from "./context/GlobalContext"
 
+function App() {
 
   return (
     <>
+      
+      <GlobalContext>
       <Router>
       <Header />
-          <Routes >
+          <Routes>
               <Route path="/" element={<About />}>
                   <Route path="/" element={<PersonalInfo />}/>
                   <Route path="/educational" element={<Educational />}/>
@@ -32,6 +35,7 @@ function App() {
           <Contact />
           <Footer />
       </Router>
+      </GlobalContext>
     </>
   )
 }
