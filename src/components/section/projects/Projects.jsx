@@ -21,19 +21,23 @@ import tailwind from '../../../assets/Tailwind CSS.png'
 import Next from '../../../assets/Next.js.png'
 import framer from '../../../assets/farmer.png'
 import star from '../../../assets/star.png'
+import { useContext } from 'react'
+import { AppContext } from '../../../context/GlobalContext.jsx'
 const Projects = () => {
+
+    const {isOn} = useContext(AppContext)
 
   return (
     <>
-   <div className='max-w-screen-2xl mx-auto xl:h-[800px] xl:flex xl:justify-center xl:items-center xl:flex-col xl:pb-[80px] pt-[80px] xl:pt-0'>
+   <div id='projects' className={`max-w-screen-2xl flex-col mx-auto xl:h-[710px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
+      <div className='centered flex-col w-full'>
+            <img src={star} className='w-12 bg-white'/>
+            <h1>Projects</h1>
+        </div>
 
-   <div id='projects' className='w-full h-[140px] flex justify-center items-center flex-col xl:gap-8'>
-    
-   <img src={star} className='w-12'/>
-      <h1 className='text-5xl'>Projects</h1>
-     </div>
-
-    <div className='max-w-screen-2xl centered mt-[44px] xl:mt-[80px]'>
+    <div className='w-full h-full centered flex-col'>
+  
+        <div className='max-w-screen-2xl centered mt-[44px] xl:mt-0'>
         <div className='xl:grid xl:grid-cols-3  w-[80%] xl:gap-5 grid grid-cols-1 gap-5'>
              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
                     <img src={ecommerceWeb} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
@@ -160,8 +164,10 @@ const Projects = () => {
                     </i>
               </div>
         </div>
+         </div>
     </div>
 
+ 
 
    </div>
 

@@ -6,11 +6,14 @@ import tiktok from '../../assets/tik-tok.png'
 import instagram from '../../assets/instagram.png'
 import panda from '../../assets/panda.png'
 import './footer.css'
+import { useContext } from 'react'
+import {AppContext} from '../../context/GlobalContext'
 const Footer = () => {
+  const {isOn} = useContext(AppContext)
   return (
     <>
 
-    <div className=' max-w-screen-2xl  flex flex-col '>
+    <div className={`${isOn ? "bg-black" : "bg-white"} max-w-screen-2xl  flex flex-col h-[80px] mx-auto`}>
 
     <ul className="wrapper ">
       <li className="icon facebook">
@@ -52,7 +55,7 @@ const Footer = () => {
     </ul>
     </div>
 
-    <div className='w-full flex justify-center  items-end '>
+    <div className={`${isOn ? "bg-black" : "bg-white"} w-full flex justify-center  items-end`}>
         <img src={panda} className='w-[260px] object-cover h-full'/>
     </div>
 

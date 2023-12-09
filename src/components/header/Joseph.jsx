@@ -55,12 +55,13 @@ const Joseph = () => {
 
 
   return (
-    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-screen h-[125vh] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"}`}>
+    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[680px] h-[125vh] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"}`}>
 
        <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col  xl:pt-[17px] xl:text-start text-center'>
             <div className='w-full  h-full  flex flex-col pt-8'>
                 <div className='flex flex-col xl:gap-2'>
-                   <h1 className='text-md xl:text-xl'>Hey there , I'm </h1>
+                   <h1 className='text-md xl:text-xl'>
+                    Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
                    <h4 className='xl:text-3xl text-xl joseph'>Full stack Developer</h4>
                 
@@ -82,7 +83,7 @@ const Joseph = () => {
             </div>
 
             
-            <div className='w-full h-full xl:flex xl:justify-start xl:items-start relative xl:pt-14 flex justify-start items-center'>
+            <div className='w-full h-[710px] xl:flex xl:justify-start xl:items-start relative xl:pt-14 flex justify-start items-center'>
 
                 <motion.div
                  drag
