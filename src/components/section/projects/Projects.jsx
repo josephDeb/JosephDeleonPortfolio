@@ -21,6 +21,7 @@ import tailwind from '../../../assets/Tailwind CSS.png'
 import Next from '../../../assets/Next.js.png'
 import framer from '../../../assets/farmer.png'
 import star from '../../../assets/star.png'
+import star2 from '../../../assets/star2.png'
 import { useContext } from 'react'
 import { AppContext } from '../../../context/GlobalContext.jsx'
 const Projects = () => {
@@ -31,7 +32,7 @@ const Projects = () => {
     <>
    <div id='projects' className={`max-w-screen-2xl flex-col mx-auto xl:h-[710px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
       <div className='centered flex-col w-full'>
-            <img src={star} className='w-12 bg-white'/>
+            {isOn ? <img src={star2} className='w-12'/> : <img src={star} className='w-12 bg-white'/>}
             <h1>Projects</h1>
         </div>
 

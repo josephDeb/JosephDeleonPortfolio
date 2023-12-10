@@ -63,7 +63,7 @@ const Contact = () => {
                 <div className='flex flex-col xl:w-full  mt-5 w-full'>
                     {loading ? <img src={load} className='w-14 mx-auto'/>
                    :
-                   <button className={`${isOn ? "bg-white text-black hover:bg-black border-2 hover:text-white" : "bg-black text-black "} w-full py-3 xl:w-[80%] xl:mx-auto`}>Submit</button>
+                   <button className={`${isOn ? "bg-white text-black hover:bg-black border-2 hover:text-white" : "bg-black text-black "} w-full py-3 xl:w-[80%] xl:mx-auto transition-all duration-500`}>Submit</button>
                    }
                 </div>
             </div>
