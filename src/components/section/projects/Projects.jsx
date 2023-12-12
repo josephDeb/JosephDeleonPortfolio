@@ -1,7 +1,7 @@
-import projects from '../../data/projects.js'
+
 import eye from '../../../assets/eye.png'
 import github from '../../../assets/github.png'
-
+import video from '../../../assets/video.png'
 
 
 
@@ -24,6 +24,9 @@ import star from '../../../assets/star.png'
 import star2 from '../../../assets/star2.png'
 import { useContext } from 'react'
 import { AppContext } from '../../../context/GlobalContext.jsx'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../fadeIn.js'
+
 const Projects = () => {
 
     const {isOn} = useContext(AppContext)
@@ -40,11 +43,25 @@ const Projects = () => {
   
         <div className='max-w-screen-2xl centered mt-[44px] xl:mt-0'>
         <div className='xl:grid xl:grid-cols-3  w-[80%] xl:gap-5 grid grid-cols-1 gap-5'>
-             <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
-                    <img src={ecommerceWeb} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
-                    <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
+             <motion.div
+             initial={"hidden"}
+             animate={{ rotate: 180, scale: 1 }}
+             transition={{
+               type: "spring",
+               stiffness: 260,
+               damping: 20
+             }}
+             variants={fadeIn('down', 0.2)}
+             whileInView={'show'}
+             viewport={{once: false, amount: 0.2}}
+             className='h-[260px] shadow-lg cursor-pointer relative w-full border-2 border-black' >
+                    <img src={ecommerceWeb} className='object-cover h-full w-full hover:object-contain transition-all duration-500 rotate-180'/>
+                    <i className='absolute rotate-180 bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
-                          <a target='_blank' href='https://www.tiktok.com/@josephdeleon28h/video/7306831739874331911'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <img src={video} className='w-8'/>
+                          </a>
+                          <a className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
                           </a>
                           <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
@@ -53,23 +70,47 @@ const Projects = () => {
                           </div>
 
                           <div className='w-full flex flex-col text-white centered text-center'>
-                              <h1>ShopBhow</h1>
+                              <h1 className='joseph'>ShopBhow</h1>
                               <p className='text-[11px]'>This is E commerce Website, I use MERN (MongoDB, Express.js, React, Node.js) stack to build this project</p>
-                              <div className='w-[80%] bg-white mt-4 px-1 py-2 flex items-center gap-5 centered'>
-                                  <img src={mongodb} className='w-8'/>
-                                  <img src={express} className='w-8'/>
-                                  <img src={react} className='w-8'/>
-                                  <img src={nodejs} className='w-8'/>
-                                  <img src={tailwind} className='w-8'/>
+                              <div className='w-[80%] mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={mongodb} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={express} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={react} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={nodejs} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={tailwind} className='object-cover w-12'/>
+                                  </div>
                               </div>
                           </div>
                     </i>
-              </div>
+              </motion.div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full  bg-black' >
-                    <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500'/>
-                    <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
+              <motion.div
+              initial={"hidden"}
+              animate={{ rotate: 180, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+              }}
+              variants={fadeIn('down', 0.4)}
+              whileInView={'show'}
+              viewport={{once: false, amount: 0.3}}
+              className='h-[260px] shadow-lg cursor-pointer relative w-full border-2 border-black' >
+                    <img src={employeesMS} className='object-cover h-full w-full hover:object-contain transition-all duration-500 rotate-180'/>
+                    <i className='absolute rotate-180 bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <img src={video} className='w-8'/>
+                          </a>
                           <a target='_blank' href='https://www.tiktok.com/@josephdeleon28h/video/7294283789033917698' className='bg-white px-2 py-2 rounded-full cursor-pointer z-40'>
                           <img src={eye} className='w-8'/>
                           </a>
@@ -81,21 +122,45 @@ const Projects = () => {
                           <div className='w-full flex flex-col text-white centered text-center'>
                               <h1 className='underline'>Employee Management System</h1>
                               <p className='text-[11px] px-4'>Managing the numbers of employees and salary, I use MERN (Mysql, Express.js, React, Node.js) stack to build this project</p>
-                              <div className='w-[80%] bg-white mt-4 px-1 py-2 flex items-center gap-5 centered'>
-                                  <img src={mysql} className='w-8'/>
-                                  <img src={express} className='w-8'/>
-                                  <img src={react} className='w-8'/>
-                                  <img src={nodejs} className='w-8'/>
-                                  <img src={tailwind} className='w-8'/>
+                              <div className='w-[80%] mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                                <div className='p-2 bg-white rounded'>
+                                      <img src={mysql} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={express} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={react} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={nodejs} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={tailwind} className='object-cover w-12'/>
+                                  </div>
                               </div>
                           </div>
                     </i>
-              </div>
+              </motion.div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
-                    <img src={panotes} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
-                    <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
+              <motion.div 
+             initial={"hidden"}
+             animate={{ rotate: 180, scale: 1 }}
+             transition={{
+               type: "spring",
+               stiffness: 260,
+               damping: 20
+             }}
+             variants={fadeIn('down', 0.6)}
+             whileInView={'show'}
+             viewport={{once: false, amount: 0.4}}
+             className='h-[260px] shadow-lg cursor-pointer relative w-full border-2 border-black' >
+                    <img src={panotes} className='object-cover h-full w-full hover:object-contain transition-all duration-500 rotate-180'/>
+                    <i className='absolute rotate-180 bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <img src={video} className='w-8'/>
+                          </a>
                           <a href='https://www.tiktok.com/@josephdeleon28h/video/7296757149487729921' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
                           </a>
@@ -107,21 +172,45 @@ const Projects = () => {
                           <div className='w-full flex flex-col text-white centered text-center'>
                               <h1 className='underline'>Panotes</h1>
                               <p className='text-[11px] px-4'>Notes application where user can (CRUD) Create,Update,Read & Delete. I use Mysql Express React Node.js</p>
-                              <div className='w-[80%] bg-white mt-4 px-1 py-2 flex items-center gap-5 centered'>
-                                  <img src={mysql} className='w-8'/>
-                                  <img src={express} className='w-8'/>
-                                  <img src={react} className='w-8'/>
-                                  <img src={nodejs} className='w-8'/>
-                                  <img src={tailwind} className='w-8'/>
+                              <div className='w-[80%]  mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                              <div className='p-2 bg-white rounded'>
+                                      <img src={mysql} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={express} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={react} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={nodejs} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={tailwind} className='object-cover w-12'/>
+                                  </div>
                               </div>
                           </div>
                     </i>
-              </div>
+              </motion.div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
-                    <img src={carentals} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
-                    <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
+              <motion.div 
+              initial={"hidden"}
+              animate={{ rotate: 180, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+              }}
+              variants={fadeIn('down', 0.7)}
+              whileInView={'show'}
+              viewport={{once: false, amount: 0.5}}
+              className='h-[260px] shadow-lg cursor-pointer relative w-full border-2 border-black' >
+                    <img src={carentals} className='object-cover h-full w-full hover:object-contain transition-all duration-500 rotate-180'/>
+                    <i className='absolute rotate-180 bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <img src={video} className='w-8'/>
+                          </a>
                           <a href='https://www.tiktok.com/@josephdeleon28h/video/7283073257702460673' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
                           </a>
@@ -133,19 +222,41 @@ const Projects = () => {
                           <div className='w-full flex flex-col text-white centered text-center'>
                               <h1 className='underline'>Carentals</h1>
                               <p className='text-[11px] px-4'>Static website I use Next.js Tailwind css & Framer motion</p>
-                              <div className='w-[80%] bg-white mt-4 px-1 py-2 flex items-center gap-5 centered'>
-                                  <img src={Next} className='w-8'/>
-                                  <img src={tailwind} className='w-8'/>
-                                  <img src={framer} className='w-8'/>
+                              <div className='w-[80%] mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                              <div className='p-2 bg-white rounded'>
+                                      <img src={Next} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={framer} className='object-cover w-12'/>
+                                  </div>
+                                  <div className='p-2 bg-white rounded'>
+                                      <img src={tailwind} className='object-cover w-12'/>
+                                  </div>
+
                               </div>
                           </div>
                     </i>
-              </div>
+              </motion.div>
 
-              <div className='h-[260px] shadow-lg cursor-pointer relative w-full' >
-                    <img src={crudReact} className='object-cover h-full w-full hover:object-contain transition-all duration-500 '/>
-                    <i className='absolute bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
+              <motion.div
+              initial={"hidden"}
+              animate={{ rotate: 180, scale: 1 }}
+              transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20
+              }}
+              variants={fadeIn('down', 0.8)}
+              whileInView={'show'}
+              
+              viewport={{once: false, amount: 0.5}}
+              className='h-[260px] shadow-lg cursor-pointer relative w-full border-2 border-black' >
+                    <img src={crudReact} className='object-cover h-full w-full hover:object-contain transition-all duration-500 rotate-180'/>
+                    <i className='absolute rotate-180 bg-black/80 top-0 h-full w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-5 flex flex-col'>
                           <div className='flex gap-5'>
+                          <a target='_blank' href='https://github.com/josephDeb/ShopBhow'  className='bg-white px-2 py-2 rounded-full cursor-pointer'>
+                          <img src={video} className='w-8'/>
+                          </a>
                           <a href='https://www.tiktok.com/@josephdeleon28h/video/7287958098529029381' target='_blank' className='bg-white px-2 py-2 rounded-full cursor-pointer'>
                           <img src={eye} className='w-8'/>
                           </a>
@@ -157,13 +268,17 @@ const Projects = () => {
                           <div className='w-full flex flex-col text-white centered text-center'>
                               <h1 className='underline'>Shopping cart</h1>
                               <p className='text-[11px] px-4'>CRUD Create,Update,Read & Delete. Using React.js</p>
-                              <div className='w-[80%] bg-white mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                              <div className='w-[80%] mt-4 px-1 py-2 flex items-center gap-5 centered'>
+                                  <div className='bg-white rounded-full p-3'>
                                   <img src={react} className='w-8'/>
-                                  <img src={tailwind} className='w-8'/>
+                                  </div>
+                                  <div className='bg-white rounded-full p-3'>
+                                    <img src={tailwind} className='w-8'/>
+                                  </div>
                               </div>
                           </div>
                     </i>
-              </div>
+              </motion.div>
         </div>
          </div>
     </div>

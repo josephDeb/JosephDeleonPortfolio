@@ -55,20 +55,19 @@ const Joseph = () => {
 
 
   return (
-    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[680px] h-[125vh] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"}`}>
+    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[620px] h-[125vh] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg`}>
 
-       <div className='w-[88%] mx-auto xl:grid xl:grid-cols-2 h-full flex flex-col  xl:pt-[17px] xl:text-start text-center'>
-            <div className='w-full  h-full  flex flex-col pt-8'>
-                <div className='flex flex-col xl:gap-2'>
+       <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center flex flex-col  xl:text-start text-center xl:h-full xl:pb-[88px]'>
+            <div className='w-full  h-full  flex flex-col pt-8  xl:flex xl:justify-center xl:items-center'>
+                <div className='flex flex-col xl:gap-2 w-full centered'>
                    <h1 className='text-md xl:text-xl'>
                     Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
-                   <h4 className='xl:text-3xl text-xl joseph'>Full stack Developer</h4>
-                
+                   <h4 className='xl:text-3xl text-xl joseph'>I build things for the web</h4>
+                  <p className='px-[240px] text-center  '>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
                 </div>
 
-
-                <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-start'>
+                <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
                     <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered`}>Resume</a>
                     <Link
                     to='contact'
@@ -77,28 +76,9 @@ const Joseph = () => {
                     className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered`}>Contact me</Link>
                 </div>
 
-                <div className='w-full xl:mt-5 centered xl:flex xl:justify-start'>
-                  <img src={cat} className='xl:w-[260px]'/>
-                </div>
+      
             </div>
 
-            
-            <div className='w-full h-[710px] xl:flex xl:justify-start xl:items-start relative xl:pt-14 flex justify-start items-center'>
-
-                <motion.div
-                 drag
-                 dragConstraints={{
-                   top: -50,
-                   left: -50,
-                   right: 50,
-                   bottom: 50,
-                 }}
-                 animate={{ x: 100 }}
-                 transition={{ type: "spring", stiffness: 100 }}
-                className='xl:w-[71%] xl:h-[71%] bg-red-200 rounded-full h-[62%] w-[62%] border-2'>
-
-                </motion.div>
-            </div>
        </div>
     </div>
   )

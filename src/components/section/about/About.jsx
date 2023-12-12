@@ -24,21 +24,21 @@ const About = () => {
   return (
  <>
  <div id='about' className={`xl:flex xl:justify-center xl:items-center xl:flex-col  ${isOn ? "bg-black text-white" : "bg-white text-black"} xl:h-[710px] max-w-screen-2xl mx-auto`}>
-     <div className='w-full centered flex-col'>
+     <div className='w-full centered flex-col gap-5'>
         <div className=''>
             {isOn ? <img src={origami2} className='w-12'/> : <img src={origami} className='w-12'/>}
          </div>
-         <h1 className='text-5xl font-bold'>About me</h1>
+         <h1 className='text-4xl font-bold fnp'>About me</h1>
      </div>
 
     <div  className='max-w-screen-2xl grid grid-cols-1 xl:grid-cols-2 py-8 mx-auto relative w-full h-full'>
 
-      <div className='bg-red-200 w-full h-full centered'>
+      <div className='w-full h-full centered'>
           <div className='bg-black w-[71%] h-[71%] centered'>
           </div>
       </div>
 
-      <div className='bg-red-200 w-full h-full xl:flex xl:items-center centered'>
+      <div className='w-full h-full xl:flex xl:items-center centered'>
          <div className='bg-black w-[71%] h-[71%]'>
 
          </div>
