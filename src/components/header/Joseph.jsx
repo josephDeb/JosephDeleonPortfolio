@@ -55,16 +55,19 @@ const Joseph = () => {
 
 
   return (
-    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[620px] h-[125vh] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg`}>
+    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[620px] h-[620px] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg`}>
 
-       <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center flex flex-col  xl:text-start text-center xl:h-full xl:pb-[88px]'>
-            <div className='w-full  h-full  flex flex-col pt-8  xl:flex xl:justify-center xl:items-center'>
+       <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center xl:text-start text-center xl:h-full xl:pb-[88px]  h-[88%] flex justify-center items-center'>
+
+            <div className='w-full  pt-8  xl:flex xl:justify-center xl:items-center flex-col'>
                 <div className='flex flex-col xl:gap-2 w-full centered'>
-                   <h1 className='text-md xl:text-xl'>
+                   <h1 className='text-lg xl:text-xl'>
                     Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
                    <h4 className='xl:text-3xl text-xl joseph'>I build things for the web</h4>
-                  <p className='px-[240px] text-center  '>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
+                  <p className='xl:px-[240px] text-center text-[14px] text-gray-500 hover:text-white transition-all duration-500'>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
+
+
                 </div>
 
                 <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
@@ -76,7 +79,6 @@ const Joseph = () => {
                     className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered`}>Contact me</Link>
                 </div>
 
-      
             </div>
 
        </div>
