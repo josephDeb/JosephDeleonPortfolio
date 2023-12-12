@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import email2 from '../../../assets/email.png'
+import call from '../../../assets/call-me.png'
 import load from '../../../assets/loading.gif'
 import emailjs from '@emailjs/browser'
 import { AppContext } from '../../../context/GlobalContext'
@@ -38,7 +39,10 @@ const Contact = () => {
     <div id='contact' className={`xl:h-[710px] max-w-screen-2xl mx-auto h-[140vh] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
         <form onSubmit={handleSubmit} className='w-[80%] flex flex-col xl:flex-row'>
             <div className='h-[350px] w-full xl:centered xl:w-full xl:h-[440px]'>
+                {isOn ?  <img src={call} className='object-cover xl:object-contain xl:h-[440px] xl:w-full'/>
+                :
                 <img src={email2} className='object-cover xl:object-contain xl:h-[440px] xl:w-full'/>
+                }
             </div>
 
             <div className='flex flex-col w-full centered'>
