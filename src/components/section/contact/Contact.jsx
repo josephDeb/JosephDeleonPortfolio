@@ -36,8 +36,8 @@ const Contact = () => {
     }
     const {isOn} = useContext(AppContext)
   return (
-    <div id='contact' className={` xl:h-[710px] max-w-screen-2xl mx-auto h-[980px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
-        <form onSubmit={handleSubmit} className='w-[80%] flex flex-col xl:flex-row'>
+    <div id='contact' className={` xl:h-[710px] max-w-screen-2xl mx-auto h-[1180px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
+        <form onSubmit={handleSubmit} className='w-[80%] flex flex-col justify-center items-center xl:justify-normal h-full xl:flex-row xl:py-0 gap-[80px]'>
             <div className='h-[350px] w-full xl:centered xl:w-full xl:h-[440px]'>
                 {isOn ?  <img src={call} className='object-cover xl:object-contain xl:h-[440px] xl:w-full'/>
                 :

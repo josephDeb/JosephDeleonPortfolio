@@ -29,7 +29,7 @@ const Projects = () => {
 
 <div className='flex justify-start items-center w-[88%] gap-5 mx-auto'>
   <h1 className='text-4xl font-bold fnp'>Projects</h1> 
-  <div className='border-2 w-[80%] mx-auto'></div>
+  <div className={`border-2 w-[80%] mx-auto ${isOn ? "border-white" : "border-black"}`}></div>
 </div>
 </div>
     <div className='w-full h-full centered flex-col'>

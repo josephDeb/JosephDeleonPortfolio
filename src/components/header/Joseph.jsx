@@ -55,7 +55,7 @@ const Joseph = () => {
 
 
   return (
-    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[620px] h-[620px] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg`}>
+    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[710px] h-[710px] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg border-2`}>
 
        <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center xl:text-start text-center xl:h-full xl:pb-[88px]  h-[88%] flex justify-center items-center'>
 
