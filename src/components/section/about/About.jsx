@@ -23,7 +23,7 @@ const About = () => {
 
   return (
  <>
- <div id='about' className={`xl:flex xl:justify-center xl:items-center xl:flex-col  ${isOn ? "bg-black text-white" : "bg-white text-black"} xl:h-[710px] max-w-screen-2xl mx-auto xl:py-5 h-[1070px] pb-[88px]`}>
+ <div id='about' className={`xl:flex xl:justify-center xl:items-center xl:flex-col  ${isOn ? "bg-black text-white" : "bg-white text-black"} xl:h-[710px] max-w-screen-2xl mx-auto xl:py-5 h-[1260px] pb-[88px]`}>
      <div className='w-full centered flex-col gap-5 xl:w-full'>
 
          <div className='flex justify-start items-center w-[88%] gap-5 mx-auto'>
@@ -32,10 +32,10 @@ const About = () => {
          </div>
      </div>
 
-    <div  className='max-w-screen-2xl grid grid-cols-1 xl:grid-cols-2 py-8 mx-auto relative w-full h-full '>
+    <div  className='max-w-screen-2xl  xl:grid-cols-2 py-8 mx-auto relative w-full h-full flex flex-col-reverse'>
 
-      <div className='w-full h-full centered'>
-          <div className=' w-[71%] h-[71%] gap-5 prg centered flex-col xl:text-gray-500 hover:text-white transition-all duration-500'>
+      <div className='w-full h-full centered pb-14 xl:pb-0 '>
+          <div className={` w-[71%] h-[71%] gap-5 prg centered flex-col text-gray-500 ${isOn ? "hover:text-white" : "hover:text-black"} transition-all duration-500`}>
               <h1>I am a passionate and self-taught Full-Stack Developer residing in Novaliches, Quezon city. At the age of 19, I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth.</h1>
 
               <h2>Now  i am actively seeking an internship opportunity to further enhance my skills.</h2>
@@ -47,7 +47,7 @@ const About = () => {
       </div>
 
       
-      <div className='w-full h-full xl:flex xl:items-center centered'>
+      <div className='w-full h-full xl:flex xl:items-center centered '>
          <div className={`${isOn ? "bg-white": "bg-black"} w-[350px] rounded-full h-[350px]`}>
 
          </div>

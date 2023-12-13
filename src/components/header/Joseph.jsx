@@ -65,7 +65,7 @@ const Joseph = () => {
                     Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
                    <h4 className='xl:text-3xl text-xl joseph'>I build things for the web</h4>
-                  <p className='xl:px-[240px] text-center text-[14px] text-gray-500 hover:text-white transition-all duration-500'>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
+                  <p className={`${isOn ? "hover:text-white" : "hover:text-black"} xl:px-[240px] text-center text-[14px] text-gray-500  transition-all duration-500 mt-3 xl:mt-0`}>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
 
 
                 </div>

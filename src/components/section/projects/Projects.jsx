@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <>
-   <div id='projects' className={`max-w-screen-2xl flex-col mx-auto xl:h-[710px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"}`}>
+   <div id='projects' className={`max-w-screen-2xl flex-col mx-auto xl:h-[710px] centered ${isOn ? "bg-black text-white" : "bg-white text-black"} h-[1650px]`}>
 
    <div className='w-full centered flex-col gap-5 xl:w-full'>
 
