@@ -71,12 +71,12 @@ const Joseph = () => {
                 </div>
 
                 <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
-                    <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered`}>Resume</a>
+                    <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered hover:border-2 hover:border-white`}>Resume</a>
                     <Link
                     to='contact'
                     activeClass='active'
                     spy={true}
-                    className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered`}>Contact me</Link>
+                    className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered hover:border-2 hover:border-white`}>Contact me</Link>
                 </div>
 
             </div>

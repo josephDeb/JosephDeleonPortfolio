@@ -47,21 +47,21 @@ const Contact = () => {
 
             <div className='flex flex-col w-full centered'>
                 <div className='w-full flex flex-col centered gap-5'>
-                    <h1 className='text-5xl font-bold xl:mt-0 mt-5'>Contact</h1>
-                    <p className='text-xl'>Would You Like To Contact Me ? Awesome!!</p>
+                    <h1 className='text-5xl font-bold xl:mt-0 mt-5 fnp'>Contact</h1>
+                    <p className='text-xl prg'>Would You Like To Contact Me ? Awesome!!</p>
                 </div>
                 
-                <div className='flex flex-col xl:w-[71%]  mt-8 w-full '>
+                <div className='flex flex-col xl:w-[71%]  mt-8 w-full prg'>
                     <label className='mx-auto w-[80%]'>Full name :</label>
                     <input onChange={(e) => setName( e.target.value)} className='w-[80%] xl:h-[44px] h-[35px] border-2 border-black p-3 mx-auto'></input>
                 </div>
                 <div className='flex flex-col xl:w-[71%]  mt-5 w-full'>
-                    <label className='mx-auto w-[80%]'>Email :</label>
+                    <label className='mx-auto w-[80%] prg'>Email :</label>
                     <input onChange={(e) => setEmail( e.target.value)} className='mx-auto w-[80%] xl:h-[44px] h-[35px] border-2 border-black p-3'></input>
                 </div>
                 
                 <div className='flex flex-col centered w-[80%] mt-3'>
-                <h1 className='xl:w-[71%] w-full'>Message Box</h1>
+                <h1 className='xl:w-[71%] w-full prg'>Message Box</h1>
                 <textarea name='message' onChange={(e) => setMessage(e.target.value)} className='border-2 border-black h-[88px] xl:w-[71%] p-3 w-[100%]'>
 
                 </textarea>
@@ -70,7 +70,7 @@ const Contact = () => {
                 <div className='flex flex-col xl:w-full  mt-5 w-full'>
                     {loading ? <img src={load} className='w-14 mx-auto'/>
                    :
-                   <button className={`${isOn ? "bg-white text-black hover:bg-black border-2 hover:text-white" : "bg-black text-white hover:bg-white border-2 border-black hover:text-black "} w-full py-3 xl:w-[71%] xl:mx-auto transition-all duration-500`}>Submit</button>
+                   <button className={`${isOn ? "bg-white text-black hover:bg-black border-2 hover:text-white" : "bg-black text-white hover:bg-white border-2 border-black hover:text-black "} w-full py-3 xl:w-[71%] xl:mx-auto transition-all duration-500 prg`}>Submit</button>
                    }
                 </div>
             </div>

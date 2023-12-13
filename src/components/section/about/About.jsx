@@ -35,7 +35,7 @@ const About = () => {
     <div  className='max-w-screen-2xl grid grid-cols-1 xl:grid-cols-2 py-8 mx-auto relative w-full h-full '>
 
       <div className='w-full h-full centered'>
-          <div className=' w-[71%] h-[71%] gap-5 prg centered flex-col xl:text-gray-500 hover:text-white'>
+          <div className=' w-[71%] h-[71%] gap-5 prg centered flex-col xl:text-gray-500 hover:text-white transition-all duration-500'>
               <h1>I am a passionate and self-taught Full-Stack Developer residing in Novaliches, Quezon city. At the age of 19, I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth.</h1>
 
               <h2>Now  i am actively seeking an internship opportunity to further enhance my skills.</h2>

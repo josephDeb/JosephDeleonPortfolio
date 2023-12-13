@@ -62,8 +62,8 @@ const Projects = () => {
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
                          <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
-                         <button className='w-14 bg-white text-black rounded-xl'>View</button>
-                         <button className='w-14 bg-white text-black rounded-xl'>Code</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://carentals-eta.vercel.app/'>View</a></button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/carentals'>Code</a></button>
                       </div>
                       <h1 className='prg'>E-COMMERCE</h1>
                       <p className='text-center prg text-[14px] text-gray-400'>This application is made by tailwind css , React JS, Mongo DB, Node.js(express) and Stripe</p>
@@ -159,7 +159,7 @@ const Projects = () => {
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
                          <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
-                         <button className='w-14 bg-white text-black rounded-xl'>View</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://shopping-cart-joseph-dat-dev.onrender.com/'>View</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'>Code</button>
                       </div>
                       <h1 className='prg'>Shopping Cart</h1>
