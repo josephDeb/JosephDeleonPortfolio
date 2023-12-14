@@ -45,8 +45,12 @@ const About = () => {
               <h5> I made a video of myself showing how I
                   started learning to program. This video
                   will showcase all of my projects, from
-                  beginner to advanced level.
-               <a>https://www.youtube.com/watch?v=pBZyNVjZgB0</a></h5>
+                  beginner to advanced level. This is the video link 
+                  
+                <a target='_blank' rel='noreferrer' href='https://www.youtube.com/watch?v=pBZyNVjZgB0&t=9s' className='text-[13px] w-full cursor-pointer underline ml-2'>https://www.youtube.com/watch?v=pBZyNVjZgB0</a>
+
+               </h5>
+
           </div>
       </div>
 
