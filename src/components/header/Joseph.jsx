@@ -51,6 +51,22 @@ const Joseph = () => {
         });
       });
     }
+
+    
+    const handleDownload = async (url) => {
+      fetch(url)
+      .then((res ) => res.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]))
+        const fileName = url.split("/").pop()
+        const aTag = document.createElement("a")
+        aTag.href=blobURL
+        aTag.setAttribute("download",fileName)
+        aTag.click();
+        aTag.remove()
+      })
+      
+    }
     
 
 

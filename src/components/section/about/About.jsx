@@ -42,7 +42,11 @@ const About = () => {
 
               <h4>My mission as a developer is simple yet powerful: to bring your vision to life. Your succes is my succes, and i'm commited to delivering result exceed your expectations.</h4>
 
-              <h5> I made a video journey from how i start from HTML/CSS to MERN stack. This video will show all my projects that i build from scratch. full video link. <a>www.example.com/josephdeleon</a></h5>
+              <h5> I made a video of myself showing how I
+                  started learning to program. This video
+                  will showcase all of my projects, from
+                  beginner to advanced level.
+               <a>https://www.youtube.com/watch?v=pBZyNVjZgB0</a></h5>
           </div>
       </div>
 
