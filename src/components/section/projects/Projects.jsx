@@ -55,7 +55,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/carentals'>Code</a></button>
                       </div>
-                      <h1 className='prg'>Upload & Download File</h1>
+                      <h1 className={`${isOn ? "text-white" : "text-white"} prg`}>Upload & Download File</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , React JS, Mongo DB, Node.js(express)</p>
                     </i>
               </motion.div>
@@ -79,7 +79,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://carentals-eta.vercel.app/'>View</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/carentals'>Code</a></button>
                       </div>
-                      <h1 className='prg'>E-COMMERCE</h1>
+                      <h1 className={'prg'}>E-COMMERCE</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , React JS, Mongo DB, Node.js(express) and Stripe</p>
                     </i>
               </motion.div>
@@ -103,7 +103,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <button className='w-14 bg-white text-black rounded-xl'><a target='_blank' rel='noreferrer' href='https://github.com/josephDeb/employeeMS'>Code</a></button>
                       </div>
-                      <h1 className='prg'>Employee Management System</h1>
+                      <h1 className={'prg'}>Employee Management System</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , React JS, MYSQL, Node.js(express)</p>
                     </i>
               </motion.div>
@@ -127,7 +127,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank'  href='https://github.com/josephDeb/Panotes'>Code</a></button>
                       </div>
-                      <h1 className='prg'>Notes App</h1>
+                      <h1 className={'prg'}>Notes App</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , React JS, MYSQL, Node.js(express)</p>
                     </i>
               </motion.div>
@@ -151,7 +151,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <a target='_blank' rel='noreferrer' href='https://github.com/josephDeb/carentals'><button className='w-14 bg-white text-black rounded-xl'>Code</button></a>
                       </div>
-                      <h1 className='prg'>Car Website</h1>
+                      <h1 className={'prg'}>Car Website</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , Next JS, Framer motion and Node.js(express)</p>
                     </i>
               </motion.div>
@@ -176,7 +176,7 @@ const Projects = () => {
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://shopping-cart-joseph-dat-dev.onrender.com/'>View</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/ShoppingCart'>Code</a></button>
                       </div>
-                      <h1 className='prg'>Shopping Cart</h1>
+                      <h1 className={'prg'}>Shopping Cart</h1>
                       <p className='text-center prg text-[14px] text-gray-400 px-3'>This application is made by Tailwind css , React JS, </p>
                     </i>
               </motion.div>
