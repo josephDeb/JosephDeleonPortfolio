@@ -55,9 +55,9 @@ const Joseph = () => {
 
 
   return (
-    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[710px] h-[710px] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg border-2`}>
+    <div id='home' className={`max-w-screen-2xl xl:mt-0  xl:h-[710px] h-[710px] mx-auto ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white/80 transition-all duration-500"} prg `}>
 
-       <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center xl:text-start text-center xl:h-full xl:pb-[88px]  h-[88%] flex justify-center items-center'>
+       <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center xl:text-start text-center xl:h-full xl:pb-[116px]  h-[88%] flex justify-center items-center'>
 
             <div className='w-full  pt-8  xl:flex xl:justify-center xl:items-center flex-col'>
                 <div className='flex flex-col xl:gap-2 w-full centered'>
@@ -71,7 +71,7 @@ const Joseph = () => {
                 </div>
 
                 <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
-                    <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white"} border-black hover:bg-black hover:text-white transition-all duration-500 cursor-pointer centered hover:border-2 hover:border-white`}>Resume</a>
+                    <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "hover:bg-black hover:border-2 hover:border-white bg-white text-black hover:text-white" : "bg-black text-white"} border-black transition-all duration-500 cursor-pointer centered hover:border-2 hover:border-white`}>Resume</a>
                     <Link
                     to='contact'
                     activeClass='active'
