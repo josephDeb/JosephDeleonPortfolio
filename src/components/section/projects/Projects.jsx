@@ -75,7 +75,7 @@ const Projects = () => {
                     <img src={ecommerceWeb} className='object-cover h-full w-full transition-all duration-500 rotate-180'/>
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
-                         <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a >Demo</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://carentals-eta.vercel.app/'>View</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/carentals'>Code</a></button>
                       </div>
@@ -99,7 +99,7 @@ const Projects = () => {
                     <img src={employeesMS} className='object-cover h-full w-full transition-all duration-500 rotate-180'/>
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
-                         <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a href='https://www.tiktok.com/@makemicry/video/7312777173264354578' target='_blank' rel='noreferrer'>Demo</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <button className='w-14 bg-white text-black rounded-xl'><a target='_blank' rel='noreferrer' href='https://github.com/josephDeb/employeeMS'>Code</a></button>
                       </div>
@@ -123,7 +123,7 @@ const Projects = () => {
                     <img src={panotes} className='object-cover h-full w-full transition-all duration-500 rotate-180'/>
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
-                         <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a href='https://www.tiktok.com/@makemicry/video/7306927043323727111' rel='noreferrer' target='_blank'>Demo</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank'  href='https://github.com/josephDeb/Panotes'>Code</a></button>
                       </div>
@@ -147,7 +147,7 @@ const Projects = () => {
                     <img src={carentals} className='object-cover h-full w-full transition-all duration-500 rotate-180'/>
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
-                         <a target='_blank' rel='noreferrer' href='https://carentals-eta.vercel.app/'><button className='w-14 bg-white text-black rounded-xl'>Demo</button></a>
+                         <a href='https://www.tiktok.com/@makemicry/video/7312771895089237256' rel='noreferrer' target='_blank'><button className='w-14 bg-white text-black rounded-xl'>Demo</button></a>
                          <button className='w-14 bg-white text-black rounded-xl'>View</button>
                          <a target='_blank' rel='noreferrer' href='https://github.com/josephDeb/carentals'><button className='w-14 bg-white text-black rounded-xl'>Code</button></a>
                       </div>
@@ -172,7 +172,7 @@ const Projects = () => {
                     <img src={crudReact} className='object-cover h-full w-full transition-all duration-500 rotate-180'/>
                     <i className='absolute rotate-180 top-0 w-full opacity-0 hover:opacity-100 transition-all duration-500 centered gap-2 flex flex-col hover:rounded-xl h-full bg-black/80 rounded-full'>
                       <div className='flex gap-5'>
-                         <button className='w-14 bg-white text-black rounded-xl'>Demo</button>
+                         <button className='w-14 bg-white text-black rounded-xl'><a href='https://www.tiktok.com/@makemicry/video/7312770213743938834' rel='noreferrer' target='_blank'>Demo</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://shopping-cart-joseph-dat-dev.onrender.com/'>View</a></button>
                          <button className='w-14 bg-white text-black rounded-xl'><a rel='noreferrer' target='_blank' href='https://github.com/josephDeb/ShoppingCart'>Code</a></button>
                       </div>

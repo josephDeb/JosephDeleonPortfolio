@@ -5,7 +5,7 @@ const defaultVal = {}
 export const AppContext = createContext(defaultVal)
 
 
-const GlobalContext = (props) => {
+const GlobalContext = ({children}) => {
     const [isOn, setIsOn] = useState(false)
 
     const values = {
@@ -14,7 +14,7 @@ const GlobalContext = (props) => {
     }
   return (
     <AppContext.Provider value={values}>
-    {props.children}
+    {children}
   </AppContext.Provider>
   )
 }

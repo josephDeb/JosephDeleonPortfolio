@@ -13,10 +13,7 @@ const Header = () => {
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
            <div className="flex justify-center items-center ">
 
-           <Link
-                className='text-[17px]
-                '>Joseph.Dev
-          </Link>
+            <h1>Joseph.Dev</h1>
            </div>
 
           
