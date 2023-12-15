@@ -87,7 +87,7 @@ const Joseph = () => {
                 </div>
 
                 <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
-                    <a href='../../assets/joseph.pdf' download className={`w-[170px] border-2 py-2 ${isOn ? "hover:bg-black hover:border-2 hover:border-white bg-white text-black hover:text-white" : "bg-black text-white hover:bg-white hover:border-2 hover:border-black hover:text-black"} transition-all duration-500 cursor-pointer centered`}>Resume</a>
+                    <a onClick={() => handleDownload("/src/assets/joseph louise.pdf")} className={`w-[170px] border-2 py-2 ${isOn ? "hover:bg-black hover:border-2 hover:border-white bg-white text-black hover:text-white" : "bg-black text-white hover:bg-white hover:border-2 hover:border-black hover:text-black"} transition-all duration-500 cursor-pointer centered`}>Resume</a>
                     <Link
                     to='contact'
                     activeClass='active'
