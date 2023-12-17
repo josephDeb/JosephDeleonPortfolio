@@ -3,16 +3,23 @@ import Joseph from "./Joseph"
 import {Link} from 'react-scroll'
 import { useContext } from 'react'
 import { AppContext } from '../../context/GlobalContext'
+
+import { fadeIn } from "../fadeIn"
+import {motion} from 'framer-motion'
+
 const Header = () => { 
 
   const {isOn} = useContext(AppContext)
 
   return (
     <>
-    <div className={`max-w-screen-2xl mx-auto shadow-xl  h-[71px] ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white  transition-all duration-500"} prg`}>
+    <div 
+    className={`max-w-screen-2xl mx-auto shadow-xl  h-[71px] ${isOn ? "bg-black text-white transition-all duration-500" : "bg-white  transition-all duration-500"} prg`}>
        <div className='w-[88%] mx-auto flex items-center justify-between h-full'>
-           <div className="flex justify-center items-center ">
 
+           <div
+           
+           className="flex justify-center items-center">
             <h1>Joseph.Dev</h1>
            </div>
 

@@ -1,23 +1,12 @@
 
-import html from '../../assets/html.png'
-import css from '../../assets/css.png'
-import js from '../../assets/java-script.png'
-import react from '../../assets/react.png'
-import nodejs from '../../assets/node-js.png'
-import express from '../../assets/express.png'
-import mongodb from '../../assets/mongodb.png'
-import mysql from '../../assets/mysql.png'
-import man from '../../assets/man.png'
-import { motion } from "framer-motion"
-import cat from '../../assets/fishingCat.gif'
-import msgbox from '../../assets/msgbox.png'
-import './header.css'
 
-import resume from '../../assets/joseph.pdf'
+import './header.css'
 
 import {Link} from 'react-scroll'
 import { useContext, useEffect } from 'react'
 import { AppContext } from '../../context/GlobalContext'
+import {motion} from 'framer-motion';
+import { fadeIn } from '../fadeIn';
 const Joseph = () => {
 
     useEffect(() => {
@@ -76,24 +65,37 @@ const Joseph = () => {
        <div className='w-[88%] mx-auto xl:flex xl:justify-center xl:items-center xl:text-start text-center xl:h-full xl:pb-[116px]  h-[88%] flex justify-center items-center'>
 
             <div className='w-full  pt-8  xl:flex xl:justify-center xl:items-center flex-col'>
-                <div className='flex flex-col xl:gap-2 w-full centered'>
+                <motion.div 
+                 variants={fadeIn('down', 0.2)}
+                 initial='hidden'
+                 whileInView={'show'}
+                 viewport={{once: false, amount: 0.6}}
+                className='flex flex-col xl:gap-2 w-full centered'>
                    <h1 className='text-lg xl:text-xl'>
                     Hey there , I'm </h1>
                   <h4 className='xl:text-5xl text-3xl joseph'>Joseph louise C. De leon</h4>
-                   <h4 className='xl:text-3xl text-xl joseph'>I build things for the web</h4>
-                  <p className={`${isOn ? "hover:text-white" : "hover:text-black"} xl:px-[240px] text-center text-[14px] text-gray-500  transition-all duration-500 mt-3 xl:mt-0`}>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic</p>
+                   <h4 className='xl:text-3xl text-xl joseph'>I build things for the web
+                   </h4>
+                  <p
+                  className={`${isOn ? "hover:text-white" : "hover:text-black"} xl:px-[240px] text-center text-[14px] text-gray-500  transition-all duration-500 mt-3 xl:mt-0 my-4`}>I am a Full stack Developer Residing in Novaliches, Quezon city. I enjoy working on every aspect of web development, from the user interface to the service logic
+                  </p>
 
 
-                </div>
+                </motion.div>
 
-                <div className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
+                <motion.div 
+                variants={fadeIn('up', 0.2)}
+                initial='hidden'
+                whileInView={'show'}
+                viewport={{once: false, amount: 0.3}}
+                className='flex gap-5 mt-5 w-full centered xl:flex xl:justify-center'>
                     <a onClick={() => handleDownload("/src/assets/joseph louise.pdf")} className={`w-[170px] border-2 py-2 ${isOn ? "hover:bg-black hover:border-2 hover:border-white bg-white text-black hover:text-white" : "bg-black text-white hover:bg-white hover:border-2 hover:border-black hover:text-black"} transition-all duration-500 cursor-pointer centered`}>Resume</a>
                     <Link
                     to='contact'
                     activeClass='active'
                     spy={true}
-                    className={`w-[170px] border-2 py-2 ${isOn ? "bg-white text-black" : "bg-black text-white hover:bg-white hover:border-2 hover:border-black hover:text-black"} transition-all duration-500 cursor-pointer centered `}>Contact me</Link>
-                </div>
+                    className={`w-[170px] border-2 py-2 ${isOn ? "hover:bg-black hover:border-2 hover:border-white bg-white text-black hover:text-white" : "bg-black text-white hover:bg-white hover:border-2 hover:border-black hover:text-black"} transition-all duration-500 cursor-pointer centered`}>Contact me</Link>
+                </motion.div>
 
             </div>
 

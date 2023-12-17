@@ -1,9 +1,8 @@
 import { useContext, useState } from 'react'
 import data from '../../data/Data'
 import { Link, Outlet } from 'react-router-dom'
-import origami from '../../../assets/origami.png'
-import origami2 from '../../../assets/origami2.png'
-import joseph from '../../../assets/joseph28.jpg'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../../fadeIn';
 import { AppContext } from '../../../context/GlobalContext'
 const About = () => {
 
@@ -24,9 +23,12 @@ const About = () => {
   return (
  <>
  <div id='about' className={`xl:flex xl:justify-center xl:items-center xl:flex-col  ${isOn ? "bg-black text-white" : "bg-white text-black"} xl:h-[710px] max-w-screen-2xl mx-auto xl:py-5 h-[1160px] pb-[88px]`}>
-     <div className='w-full centered flex-col gap-5 xl:w-full'>
+     <div 
 
-         <div className='flex justify-start items-center w-[88%] gap-5 mx-auto'>
+     className='w-full centered flex-col gap-5 xl:w-full'>
+
+         <div 
+         className='flex justify-start items-center w-[88%] gap-5 mx-auto'>
            <h1 className='text-4xl font-bold fnp'>About me</h1> 
            <div className={`border-2 w-[80%] mx-auto ${isOn ? "border-white" : "border-black"}`}></div>
          </div>
@@ -34,7 +36,12 @@ const About = () => {
 
     <div  className='max-w-screen-2xl xl:grid xl:px-8  xl:grid-cols-2 py-8 mx-auto relative w-full h-full flex flex-col-reverse'>
 
-      <div className='w-full h-full centered pb-14 xl:pb-0 '>
+      <motion.div 
+       variants={fadeIn('down', 0.2)}
+       initial='hidden'
+       whileInView={'show'}
+       viewport={{once: false, amount: 0.2}}
+      className='w-full h-full centered pb-14 xl:pb-0 '>
           <div className={` w-[80%] xl:w-[71%] xl:h-[71%] gap-5 prg centered flex-col text-gray-500 ${isOn ? "hover:text-white" : "hover:text-black"} transition-all duration-500`}>
               <h1>I am a passionate and self-taught Full-Stack Developer residing in Novaliches, Quezon city. At the age of 19, I have dedicated myself to the exciting world of web development and have embarked on a journey of constant learning and growth.</h1>
 
@@ -52,13 +59,18 @@ const About = () => {
                </h5>
 
           </div>
-      </div>
+      </motion.div>
 
       
       <div className='w-full h-full xl:flex xl:items-center centered '>
-         <div className={`${isOn ? "bg-white": "bg-black"} w-[350px] rounded-full h-[350px]`}>
+         <motion.div 
+          variants={fadeIn('up', 0.2)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{once: false, amount: 0.2}}
+         className={`${isOn ? "bg-white": "bg-black"} w-[350px] rounded-full h-[350px]`}>
 
-         </div>
+         </motion.div>
       </div>
    </div>
 </div>
